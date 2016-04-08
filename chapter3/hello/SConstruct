@@ -1,0 +1,16 @@
+#env = Environment(tools=['cuda'],toolpath=['../../tools'])
+#env.Append(LIBS=['cutil', 'glut', 'GLEW'])
+#env.Program('hello', ['hello.c'])
+
+
+
+env = Environment(toolpath=['../../tools'])
+env.Tool('cuda')
+#env.Append(LIBS=['cutil', 'glut', 'GLEW'])
+#env.Append(LIBS=['cutil', 'glut', 'GLEW'])
+
+env.Program('hello', ['hello.cu'])
+
+
+
+#Program('hello.c', LIBS=[], LIBPATH='/usr/local/cuda/lib64')
