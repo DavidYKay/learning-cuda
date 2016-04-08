@@ -1,0 +1,4 @@
+env = Environment(toolpath=['../../tools'])
+env.Tool('cuda')
+
+env.Program('malloc', ['malloc.cu'])
