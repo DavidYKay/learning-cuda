@@ -10,6 +10,6 @@ Operating system: 64-bit Linux
 
 Build tool: SCons, using a slightly different version of the SCons [tool from the official wiki](https://bitbucket.org/scons/scons/wiki/CudaTool).
 
-## License
+## Derivate Work
 
-This is free and unencumbered software released into the public domain.
+This software contains source code provided by NVIDIA Corporation.
