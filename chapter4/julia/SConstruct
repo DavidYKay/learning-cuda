@@ -1,5 +1,5 @@
 env = Environment(toolpath=['../../tools'])
 env.Tool('cuda')
-
-env.Program('devices', ['devices.cu'])
+env.Append(LIBS=['glut', 'GL'])
+env.Program('julia', ['julia.cu'])
 
