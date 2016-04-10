@@ -1,0 +1,5 @@
+env = Environment(toolpath=['../../tools'])
+env.Tool('cuda')
+
+env.Program('devices', ['devices.cu'])
+
