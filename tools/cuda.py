@@ -67,8 +67,8 @@ def generate(env):
     env.Append(LIBPATH=[cudaToolkitPath + '/samples/common/lib',
                         '/lib64',
                         cudaToolkitPath + '/targets/%s/lib' % platform,])
-    env.Append(LIBS=['pthread', 'cudart'])
+    env.Append(LIBS=['pthread', 'stdc++', 'cudart'])
     env.Append(RPATH = cudaToolkitPath + 'targets/%s/lib' % platform)
-    
+
 def exists(env):
     return env.Detect('nvcc')
